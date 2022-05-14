@@ -1,41 +1,546 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Trello Clone</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>CodePen - Trello Clone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div id="main">
-  <div class="list">
-    <div class="title removable editable">This is a list</div>
-    <div class="content">
-      <div class="card removable editable">This is a card</div>
-      <div class="card removable editable" style="">Look, another card!</div>
-    </div>
-    <div class="add-card editable">Add another card</div>
-  </div>
-  <div class="list">
-    <div class="title removable editable">Another list</div>
-    <div class="content">
-      <div class="card removable editable">Hello world!</div>
-    </div>
-    <div class="add-card editable">Add another card</div>
-  </div>
-  <div class="list">
-    <div class="title removable editable">Empty list</div>
-    <div class="content"></div>
-    <div class="add-card editable">Add another card</div>
-  </div>
-</div>
 
-<div class="add-list">
-  <div class="title editable">Add another list</div>
-</div>
-<!-- partial -->
-  <script src='https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js'></script><script  src="./script.js"></script>
+<body>
+    <!-- partial:index.partial.html -->
+    <div id="main">
+
+        <!-- EACH LIST -->
+        <div class="list list-purple ">
+            <!-- ITEMS -->
+            <div class="title removable editable">Product Backlog</div>
+            <!-- STORIES CONTAINER-->
+            <div class="content">
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">Main tasks epic</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">Main tasks epic</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">Main tasks epic</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">Main tasks epic</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ADD ANOTHER CARD -->
+            <div class="add-card editable">
+                <div class="add">Add another card</div>
+            </div>
+        </div>
+
+        <!-- EACH LIST -->
+        <div class="list list-red ">
+            <!-- ITEMS -->
+            <div class="title removable editable">Current Sprint Backlog</div>
+            <!-- STORIES CONTAINER-->
+            <div class="content">
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-orange">Second epic</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">UI</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">Main tasks epic</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">Main tasks epic</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ADD ANOTHER CARD -->
+            <div class="add-card editable">
+
+                <div class="add">Add another card</div>
+            </div>
+        </div>
+
+        <!-- EACH LIST-->
+        <div class="list list-orange">
+            <!-- ITEMS -->
+            <div class="title removable editable">In Progress</div>
+            <!-- STORIES CONTAINER-->
+            <div class="content">
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">UI</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">UI</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">Main tasks epic</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EACH STORY -->
+                <div class="card removable editable">
+                    <div class="card-layout">
+                        <div class="top">
+                            <i class="fa-solid fa-square-check task-type"></i>
+                            <div class="task-number">GT-1</div>
+                            <i class="fa-solid fa-circle-user user"></i>
+                        </div>
+                        <div class="mid">
+                            <div class="task-description">Story goes here</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="epic epic-blue ">Main tasks epic</div>
+                            <div class="estimate-time"> 4h</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ADD ANOTHER CARD -->
+            <div class="add-card editable">
+
+                <div class="add">Add another card</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EACH LIST-->
+    <div class="list list-blue">
+        <!-- ITEMS -->
+        <div class="title removable editable">Review</div>
+        <!-- STORIES CONTAINER-->
+        <div class="content">
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">UI</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">UI</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">Main tasks epic</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">Main tasks epic</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ADD ANOTHER CARD -->
+        <div class="add-card editable">
+
+            <div class="add">Add another card</div>
+        </div>
+    </div>
+
+    <!-- EACH LIST-->
+    <div class="list list-green">
+        <!-- ITEMS -->
+        <div class="title removable editable">Done</div>
+        <!-- STORIES CONTAINER-->
+        <div class="content">
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">UI</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">UI</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">Main tasks epic</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">Main tasks epic</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">Main tasks epic</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">Main tasks epic</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ADD ANOTHER CARD -->
+        <div class="add-card editable">
+
+            <div class="add">Add another card</div>
+        </div>
+    </div>
+
+    <!-- EACH LIST-->
+    <div class="list list-cyan">
+        <!-- ITEMS -->
+        <div class="title removable editable">Additional resources</div>
+        <!-- STORIES CONTAINER-->
+        <div class="content">
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">UI</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EACH STORY -->
+            <div class="card removable editable">
+                <div class="card-layout">
+                    <div class="top">
+                        <i class="fa-solid fa-square-check task-type"></i>
+                        <div class="task-number">GT-1</div>
+                        <i class="fa-solid fa-circle-user user"></i>
+                    </div>
+                    <div class="mid">
+                        <div class="task-description">Story goes here</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="epic epic-blue ">UI</div>
+                        <div class="estimate-time"> 4h</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ADD ANOTHER CARD -->
+        <div class="add-card editable">
+
+            <div class="add">Add another card</div>
+        </div>
+    </div>
+
+
+    <!-- partial -->
+    <script src='https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js'></script>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/68e71f1e6a.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
