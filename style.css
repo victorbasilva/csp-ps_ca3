@@ -96,6 +96,10 @@ div {
     color: gray;
 }
 
+.title .del {
+    color: white;
+}
+
 .card-layout {
     display: flex;
     flex-direction: column;
