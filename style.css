@@ -44,6 +44,7 @@ div {
     background: white;
     border-bottom: 1px solid #aaa;
     border-left: 6px solid orange;
+    max-width: 300px;
 }
 
 .list {
@@ -148,18 +149,17 @@ div {
     background-color: #4A6785;
 }
 
-.epic-orange {
-    background-color: #F79232;
-}
-
+.epic-purple,
 .list-purple {
     background-color: #8621bf;
 }
 
+.epic-red,
 .list-red {
     background-color: #a71919;
 }
 
+.epic-orange,
 .list-orange {
     background-color: #c96828;
 }
@@ -168,6 +168,7 @@ div {
     background-color: #326aa1;
 }
 
+.epic-green,
 .list-green {
     background-color: #51a569;
 }
